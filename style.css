@@ -1,14 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 body {
     margin: 0;
-    background: linear-gradient(rgb(66, 1, 66), rgb(0, 102, 136));
     min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+    /* font-family: sans-serif; */
+    /* font-family: monospace; */
 }
 
-.images {
-    width: 100vw;
-    height: 100vh;
+div.images {
     position: relative;
-    
+    height: 100vh;
+
+    /* background: linear-gradient(rgb(66, 1, 66), rgb(0, 102, 136)); */
+    background: linear-gradient(rgb(66, 1, 66), rgb(0, 102, 136), rgb(66, 1, 66));
+
     img {
         position: absolute;
         inset: 0px;
@@ -17,7 +25,42 @@ body {
         object-fit: cover;
     }
 
+    /* let gradient background overlay the moon background color*/
     img[alt="Moon"] {
         mix-blend-mode: screen;
     }
+
+    h1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        color: white;
+        /* text-transform: uppercase; */
+        white-space: nowrap;
+        font-size: 8vw;
+        letter-spacing: 2px;
+    }
 }
+
+
+/* text section */
+section {
+    position: relative;
+    z-index: 100;
+    
+    padding: 4rem;
+    background: rgb(43, 2, 43);
+    color: whitesmoke;
+
+    & > * { padding-block: 10px };
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
