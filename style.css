@@ -38,7 +38,7 @@ div.images {
         color: white;
         /* text-transform: uppercase; */
         white-space: nowrap;
-        font-size: 8vw;
+        font-size: max(3rem, 8vw);
         letter-spacing: 2px;
     }
 }
