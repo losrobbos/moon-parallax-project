@@ -48,7 +48,8 @@ section {
     position: relative;
     z-index: 100;
     
-    padding: 4rem;
+    /* responsive padding using min */
+    padding: min(4rem, 5%);
     background: rgb(43, 2, 43);
     color: whitesmoke;
 
