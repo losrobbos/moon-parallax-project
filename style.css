@@ -36,9 +36,8 @@ div.images {
         top: 50%;
         translate: -50% -50%;
         color: white;
-        /* text-transform: uppercase; */
         white-space: nowrap;
-        font-size: max(3rem, 8vw);
+        font-size: clamp(3rem, 8vw, 5.5rem);
         letter-spacing: 2px;
     }
 }
