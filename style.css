@@ -37,7 +37,7 @@ div.images {
         translate: -50% -50%;
         color: white;
         white-space: nowrap;
-        font-size: clamp(3rem, 8vw, 5.5rem);
+        font-size: clamp(3rem, 7vw, 5.5rem);
         letter-spacing: 2px;
     }
 }
